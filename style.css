@@ -1,0 +1,156 @@
+*{
+  border:none;
+  padding:none;
+ 
+}
+body{
+  background-color:hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+ 
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+ 
+}
+img{
+  width:260px;
+  height:400px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+ 
+}
+.card_details{
+  margin-top: -3px;
+
+  width:238px;
+  height:400px;
+  background-color: white;
+  padding:0px 18px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+span{
+  font-family: 'Fraunces', serif;
+}
+#brand{
+  font-family: 'Fraunces', serif;
+  width:220px;
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: -1px;
+  line-height: 38px;
+  color: hsl(212, 21%, 14%)
+
+}
+#product_description{
+  
+  font-size: 14px;
+  width:240px;
+  font-weight: 500;
+  color:hsl(228, 12%, 48%);
+  margin-top: -14px;
+  line-height: 20px;
+  
+}
+#product{
+  color:hsl(228, 12%, 48%);
+  margin-top: 25px;
+}
+button{
+  display: flex;
+  background-color:  hsl(158, 36%, 37%);
+  margin-top: 15px;
+  color:white;
+  padding:10px 60px;
+  border-radius:10px;
+  font-weight: 600;
+}
+button:hover{
+  background-color: rgb(4, 71, 4);
+  cursor:pointer;
+}
+#icon{
+  width:18px;
+  height:18px;
+  padding-left: 5px;
+  padding-right: 8px;
+}
+.button{
+  align-items: center;
+  margin-top: 8px;
+}
+span{
+  
+  color:hsl(158, 36%, 37%) ;
+  font-weight:600;
+  font-size:28px;
+  font-family: 'Fraunces', serif;
+  margin-right: 20px;
+}
+#price{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+ 
+}
+#original{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration:line-through;
+  color:hsl(228, 12%, 48%);
+
+}
+@media (max-width:375px){
+  .container{
+    display:flex;
+    flex-direction: column;
+    margin-top:-120px;
+    margin-bottom:0px;
+    margin-left: 20px;
+  }
+  img{
+    object-fit:cover;
+    width:330px;
+    height:260px;
+    border-bottom-left-radius:0px; 
+    margin-left: -21px;
+  border-top-right-radius:10px;
+    
+  
+  }
+  .card_details{
+    width:290px;
+    height:320px;
+    margin-left: -20px;
+    margin-top: -4px;
+   
+    padding:20px;
+    color:white;
+    border-radius: none;
+
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius:0px;
+  }
+    
+  #brand{
+    width:280px;
+    font-size: 30px;
+    line-height: 30px;
+  
+
+  }
+  #product_description{
+    font-size: 14px;
+    font-weight: 500;
+    width:256px;
+  }
+  button{
+    padding:10px 100px;
+  }
+}
